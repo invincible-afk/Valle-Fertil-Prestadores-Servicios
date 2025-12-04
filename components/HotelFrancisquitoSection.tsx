@@ -7,6 +7,11 @@ import Image from "next/image"
 
 const images = [
   "/Hotel-Francisquito/HOTELFRANCISQUITO-01.jpg",
+  "/Hotel-Francisquito/HOTELFRANCISQUITO-02.jpg",
+  "/Hotel-Francisquito/HOTELFRANCISQUITO-03.jpg",
+  "/Hotel-Francisquito/HOTELFRANCISQUITO-04.jpg",
+  "/Hotel-Francisquito/HOTELFRANCISQUITO-05.jpg",
+  
 ]
 
 const HOTEL = {
