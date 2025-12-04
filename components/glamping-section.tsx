@@ -147,7 +147,7 @@ export function GlampingSection() {
               <Button
                 size="lg"
                 className="bg-emerald-600 hover:bg-emerald-700 text-white rounded-full px-8"
-                onClick={() => window.open("https://wa.me/5492646123456", "_blank")}
+                onClick={() => window.open("https://wa.me/5492646605092", "_blank")}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Reservar por WhatsApp
