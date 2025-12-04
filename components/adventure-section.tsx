@@ -155,7 +155,7 @@ export function AdventureSection() {
               <Button
                 size="lg"
                 className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-8"
-                onClick={() => window.open("https://wa.me/5492646123456", "_blank")}
+                onClick={() => window.open("https://wa.me/5492645172411", "_blank")}
               >
                 Consultar Salidas
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -165,10 +165,10 @@ export function AdventureSection() {
                 size="lg"
                 variant="outline"
                 className="border-amber-600 text-amber-700 hover:bg-amber-50 rounded-full px-8 bg-transparent"
-                onClick={() => window.open("https://instagram.com/lastumanasextremo", "_blank")}
+                onClick={() => window.open("https://instagram.com/lastumanas_extremo", "_blank")}
               >
                 <InstagramIcon className="w-5 h-5 mr-2" />
-                @lastumanasextremo
+                @lastumanas_extremo
               </Button>
             </div>
           </div>
