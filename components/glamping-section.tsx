@@ -165,7 +165,7 @@ export function GlampingSection() {
                 }
               >
                 <Instagram className="w-5 h-5 mr-2" />
-                @glamping.lashigueras
+                @glamping_lashigueras
               </Button>
             </div>
           </div>
