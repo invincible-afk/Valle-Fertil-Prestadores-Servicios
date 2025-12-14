@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { GlampingSection } from "@/components/glamping-section"
 import { TerrazasSection } from "@/components/terrazas-section"
-import { AdventureSection } from "@/components/adventure-section"
+import { AdventureSection } from "@/components/LasTumanasExtremo"
 import { AstroterraSection } from "@/components/astroterra-section"
 import { PracticalInfoSection } from "@/components/practical-info-section"
 import { CabanaMadridSection } from "@/components/madrid-section"
@@ -10,6 +10,9 @@ import { EscapeAventuraSection } from "@/components/EscapeAventuraSection"
 import { FincaElsaSection } from "@/components/FincaElsaSection"
 import { HotelFrancisquitoSection } from "@/components/HotelFrancisquitoSection"
 import { LogosCarousel } from "@/components/carrusel"
+import { ElCukitoSection } from "@/components/Elcukito-section"
+import { LaCatalinaSection } from "@/components/LaCatalinaSection"
+
 
 export default function Page() {
   return (
@@ -53,6 +56,14 @@ export default function Page() {
       <div id="hotel-francisquito">
         <HotelFrancisquitoSection />
       </div>
+
+      <div id="el-cukito">
+        <ElCukitoSection />
+      </div>
+
+    <div id="la-catalina">
+       <LaCatalinaSection />
+    </div>
 
       <PracticalInfoSection />
       
