@@ -134,20 +134,20 @@ export function AdventureSection() {
             </h2>
 
             <p className="text-lg text-zinc-600 mb-6 leading-relaxed max-w-lg">
-              Turismo aventura con Las Tumanas Extremo. Descubrí los rincones más salvajes del Valle a través de
-              trekking, escalada y recorridos exclusivos.
+              Turismo aventura en Las Tumanas Extremo. Descubrí los rincones más salvajes del Valle a través de
+              senderismo por caminos nativos, escalada y recorridos exclusivos.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100">
                 <Compass className="w-6 h-6 text-amber-600 mb-2" />
-                <h4 className="font-bold text-zinc-900">Trekking</h4>
+                <h4 className="font-bold text-zinc-900">Senderismo</h4>
                 <p className="text-sm text-zinc-500">Senderos vírgenes</p>
               </div>
               <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-100">
                 <MapPin className="w-6 h-6 text-amber-600 mb-2" />
                 <h4 className="font-bold text-zinc-900">Expediciones</h4>
-                <p className="text-sm text-zinc-500">Guiadas por expertos</p>
+                <p className="text-sm text-zinc-500">Guiadas por personal capacitado</p>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export function AdventureSection() {
               <Button
                 size="lg"
                 className="bg-amber-600 hover:bg-amber-700 text-white rounded-full px-8"
-                onClick={() => window.open("https://wa.me/5492645172411", "_blank")}
+                onClick={() => window.open("https://wa.me/5492645201185", "_blank")}
               >
                 Consultar Salidas
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -165,10 +165,10 @@ export function AdventureSection() {
                 size="lg"
                 variant="outline"
                 className="border-amber-600 text-amber-700 hover:bg-amber-50 rounded-full px-8 bg-transparent"
-                onClick={() => window.open("https://instagram.com/lastumanas_extremo", "_blank")}
+                onClick={() => window.open("https://instagram.com/lastumanasextremo", "_blank")}
               >
                 <InstagramIcon className="w-5 h-5 mr-2" />
-                @lastumanas_extremo
+                @lastumanasextremo
               </Button>
             </div>
           </div>
