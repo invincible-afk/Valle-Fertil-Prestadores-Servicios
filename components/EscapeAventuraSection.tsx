@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Instagram, MessageCircle, MapPin, Phone } from "lucide-react"
+import { Facebook, MessageCircle, MapPin, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -18,7 +18,7 @@ const ESCAPE = {
   direccion: "Atención Virtual",
   telefono: "2645633824",
   whatsappLink: "https://wa.me/5492645633824",
-  instagramLink: "https://instagram.com/escapeaventura",
+  facebookLink: "https://www.facebook.com/share/17ibnk2jar/",
   logoPath: "/Escape-Aventura/ESCAPEAVENTURA-05.svg",
 
   fraseCarousel:
@@ -121,10 +121,10 @@ export function EscapeAventuraSection() {
                 size="lg"
                 variant="outline"
                 className="border-red-600 text-red-700 hover:bg-red-50 rounded-full px-8"
-                onClick={() => window.open(ESCAPE.instagramLink, "_blank")}
+                onClick={() => window.open(ESCAPE.facebookLink, "_blank")}
               >
-                <Instagram className="w-5 h-5 mr-2" />
-                @escapeaventura
+                <Facebook className="w-5 h-5 mr-2" />
+                Síguenos en Facebook
               </Button>
             </div>
           </div>
