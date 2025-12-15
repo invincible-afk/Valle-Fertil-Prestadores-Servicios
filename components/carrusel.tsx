@@ -12,7 +12,7 @@ const logos = [
   { id: "escape-aventura", src: "/Escape-Aventura/ESCAPEAVENTURA-05.svg", label: "Escape Aventura" },
   { id: "asrtoterra", src: "/astroterra/ASTROTERRA.svg", label: "Astroterra" },
   { id: "adventure-tumanas", src: "/Las-Tumanas-Extremo/LASTUMANASEXTREMO-07.svg", label: "Las Tumanas Extremo" },
-  { id: "el-cukito", src: "/Supermarket-ElCukito/El-cukito-11.svg", label: "El Cukito" },
+  { id: "el-cukito", src: "/Supermarket-ElCukito/El-Cukito-11.svg", label: "El Cukito" },
   { id: "la-catalina", src: "/La-Catalina-Cabañas/LaCatalina-10.svg", label: "La Catalina Cabañas" },
 ]
 
