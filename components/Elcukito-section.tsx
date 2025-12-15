@@ -80,7 +80,7 @@ export function ElCukitoSection() {
               alt={COMERCIO.nombre}
               width={800}
               height={300}
-              className="w-auto h-52 mb-8"
+              className="w-auto h-64 mb-8"
             />
 
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-zinc-900 leading-[1.1]">

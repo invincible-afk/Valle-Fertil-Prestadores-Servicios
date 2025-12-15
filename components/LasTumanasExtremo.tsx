@@ -168,7 +168,7 @@ export function AdventureSection() {
                 onClick={() => window.open("https://instagram.com/lastumanas_extremo", "_blank")}
               >
                 <InstagramIcon className="w-5 h-5 mr-2" />
-                @lastumanasextremo
+                @lastumanas_extremo
               </Button>
             </div>
           </div>
