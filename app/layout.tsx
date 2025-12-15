@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Valle Fértil',
-  description: 'Created by Max Ramo',
+  description: 'Prestadores de Servicios Turísticos en Valle Fértil, San Juan, Argentina.',
   generator: 'Drakkar Studio',
   icons: {
     icon: [
