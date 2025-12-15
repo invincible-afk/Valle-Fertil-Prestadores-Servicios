@@ -20,7 +20,7 @@ const COMERCIO = {
 
  
 
-  logoPath: "/Supermarket-ElCukito/El-cukito-11.svg",
+  logoPath: "/Supermarket-ElCukito/El-Cukito-11.svg",
 
   fraseCarousel: "La variedad que buscás, con la calidez de siempre.",
 
