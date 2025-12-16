@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Instagram, MessageCircle, MapPin, Phone } from "lucide-react"
+import { Instagram, MessageCircle, MapPin, Phone, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
@@ -24,8 +24,7 @@ const CARNES = {
   instagramLink: "https://instagram.com/carnes.santa.barbara",
   logoPath: "/Carnes-Santa-Barbara/CARNESSANTABARBARA-09.svg",
 
-  fraseCarousel:
-    "Calidad que se siente, tradición que se comparte.",
+  fraseCarousel: "Calidad que se siente, tradición que se comparte.",
 
   descripcion: {
     titulo: "Calidad que se siente.",
@@ -33,8 +32,7 @@ const CARNES = {
     p1: "En Carnes Santa Bárbara llevamos la tradición en cada producto: carnes de primera calidad, frutas frescas y verduras de la huerta, seleccionadas con el cuidado de siempre.",
     p2_highlight:
       "Somos una carnicería de espíritu familiar, donde lo simple, lo natural y lo auténtico siguen presentes todos los días.",
-    p3_closing:
-      "Carnes Santa Bárbara: sabor de campo, calidad de hogar.",
+    p3_closing: "Carnes Santa Bárbara: sabor de campo, calidad de hogar.",
   },
 }
 
@@ -45,22 +43,24 @@ export function CarnesSantaBarbaraSection() {
 
   useEffect(() => {
     if (paused || images.length === 0) return
-    const interval = setInterval(() => nextImage(), 4000)
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length)
+    }, 4000)
     return () => clearInterval(interval)
-  }, [paused, current])
+  }, [paused])
 
   const nextImage = () => {
-    if (images.length > 0)
-      setCurrent((prev) => (prev + 1) % images.length)
+    setCurrent((prev) => (prev + 1) % images.length)
   }
+
   const prevImage = () => {
-    if (images.length > 0)
-      setCurrent((prev) => (prev - 1 + images.length) % images.length)
+    setCurrent((prev) => (prev - 1 + images.length) % images.length)
   }
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     startX.current = e.touches[0].clientX
   }
+
   const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     if (!startX.current) return
     const diff = startX.current - e.changedTouches[0].clientX
@@ -70,13 +70,12 @@ export function CarnesSantaBarbaraSection() {
   }
 
   return (
-    <section className="py-24 bg-[#fff]/80 overflow-hidden relative">
+    <section className="py-24 bg-white/80 overflow-hidden relative">
       <div className="container px-4 mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
 
           {/* LEFT */}
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
-
             <div className="mb-8">
               <Image
                 src={CARNES.logoPath}
@@ -84,6 +83,7 @@ export function CarnesSantaBarbaraSection() {
                 width={800}
                 height={200}
                 className="w-auto h-64"
+                priority
               />
             </div>
 
@@ -139,12 +139,41 @@ export function CarnesSantaBarbaraSection() {
             </div>
           </div>
 
-          {/* RIGHT (carousel placeholder) */}
+          {/* RIGHT – CAROUSEL */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2 relative">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-zinc-200 flex items-center justify-center">
-              {images.length === 0 && (
-                <p className="text-zinc-600 text-lg">Próximamente imágenes…</p>
-              )}
+            <div
+              className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
+              onMouseEnter={() => setPaused(true)}
+              onMouseLeave={() => setPaused(false)}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
+              {images.map((src, index) => (
+                <Image
+                  key={src}
+                  src={src}
+                  alt={`Carnes Santa Bárbara ${index + 1}`}
+                  fill
+                  className={`object-cover transition-opacity duration-700 ${
+                    index === current ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+
+              {/* Controls */}
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-red-700 rounded-full p-2 shadow-md"
+              >
+                <ChevronLeft />
+              </button>
+
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-red-700 rounded-full p-2 shadow-md"
+              >
+                <ChevronRight />
+              </button>
             </div>
           </div>
 
