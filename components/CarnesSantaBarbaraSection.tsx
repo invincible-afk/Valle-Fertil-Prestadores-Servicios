@@ -6,8 +6,13 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const images: string[] = [
-  // Cuando subas imágenes solo agregalas aquí:
-  // "/Carnes-Santa-Barbara/CARNESSANTABARBARA-01.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara00.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara01.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara2.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara3.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara4.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara5.jpg",
+  "/Carnes-Santa-Barbara/Santa-Barbara6.jpg",
 ]
 
 const CARNES = {
